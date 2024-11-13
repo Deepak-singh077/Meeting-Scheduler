@@ -6,12 +6,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import TimeDateSelection from './TimeDateSelection'
-import UserFormInfo from './UserFormInfo'
+import UserFormInfo from './UserForminfo';
 import { collection, doc, getDocs, getFirestore, query, setDoc, where } from 'firebase/firestore'
 import { app } from '@/config/FirebaseConfig'
 import { toast } from 'sonner'
 import { useRouter } from 'next/navigation'
-
 import Plunk from '@plunk/node';
 import { render } from '@react-email/render';
 import Email from '@/emails';
